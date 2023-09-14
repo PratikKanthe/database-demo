@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 
@@ -16,7 +17,7 @@ function Home() {
     <>
       <div className="container">
         <div className="card">
-        <h1>This data is from <span className="letter">MYSQL</span></h1>
+        <h1>This data is from <span className="letter"><Link href="/about">MYSQL</Link></span></h1>
         {data.map((d, i) => {
           return (
             <div key={i}>
